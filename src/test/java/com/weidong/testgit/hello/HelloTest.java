@@ -12,6 +12,7 @@ public class HelloTest {
     @Test
     public void testHello() throws Exception {
         String who = new LocalDate().toString();
-        assertTrue(new Hello().hello(who).contains("Hello "));
+        Hello hello = new Hello();
+        assertTrue(hello.hello(who).contains("Hello "));
     }
 }
