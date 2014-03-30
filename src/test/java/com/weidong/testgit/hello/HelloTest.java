@@ -11,6 +11,7 @@ import static org.junit.Assert.assertTrue;
 public class HelloTest {
     @Test
     public void testHello() throws Exception {
-        assertTrue(new Hello().hello(new LocalDate().toString()).contains("Hello "));
+        String who = new LocalDate().toString();
+        assertTrue(new Hello().hello(who).contains("Hello "));
     }
 }
